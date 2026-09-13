@@ -16,7 +16,7 @@
   <p class="meta">Developer: Moshmancer · Contact: 0x.moshmancer@gmail.com · Last updated: 2026-09-13</p>
   <div class="card">
     <h2>Data stored on your device</h2>
-    <p>Moshmancer stores connection profiles, host names, user names, ports, known-host fingerprints, encrypted passwords, SSH private keys, terminal session checkpoints, and optional terminal transcripts in the app's private storage. Passwords are encrypted with Android Keystore. Terminal transcripts and session checkpoints are encrypted before being written.</p>
+    <p>Moshmancer stores connection profiles, host names, user names, ports, known-host fingerprints, passwords (encrypted with Android Keystore) and the SSH private key file in the app's private storage. Terminal session checkpoints and optional terminal transcripts are encrypted before being written. The private key is a plain file inside the app's sandbox, the same way ssh stores keys on a desktop, and it never leaves the device.</p>
 
     <h2>Network connections</h2>
     <p>The app connects only to hosts that you configure. The current release does not include analytics, advertising, crash telemetry, cloud sync, or a Moshmancer remote account. SSH, ET, Mosh, and Herdr traffic goes directly to the hosts you choose. Your network or VPN provider may still observe connection metadata.</p>
