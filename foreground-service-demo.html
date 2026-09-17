@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moshmancer Foreground Service Demo</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <h1>Moshmancer Foreground Service Demo</h1>
+    <p>
+      This short, sanitized recording demonstrates the user-visible foreground-service flow used for
+      <code>FOREGROUND_SERVICE_DATA_SYNC</code>.
+    </p>
+    <ol>
+      <li>The user starts an SSH terminal session to the demo host.</li>
+      <li>The user runs a command in the terminal.</li>
+      <li>The user leaves Moshmancer and returns to the home screen.</li>
+      <li>Moshmancer's ongoing notification remains visible with the active connection status.</li>
+      <li>Tapping the notification returns the user to the still-connected terminal session.</li>
+    </ol>
+    <video controls preload="metadata" playsinline poster="assets/videos/foreground-service-demo-poster.jpg" style="width:100%;max-width:540px;height:auto;">
+      <source src="assets/videos/foreground-service-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>
+      Direct video link:
+      <a href="assets/videos/foreground-service-demo.mp4">foreground-service-demo.mp4</a>
+    </p>
+  </main>
+</body>
+</html>
